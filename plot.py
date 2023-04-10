@@ -22,11 +22,11 @@ def scatter_plot(team_5v5):
         width=750,
         height=750
     )
-    fig.add_annotation(text="Underperforming expectation",
+    fig.add_annotation(text="Underperforming",
                     xref="paper", yref="paper",
                     x=0.95, y=0.05, showarrow=False)
 
-    fig.add_annotation(text="Outperforming expectation",
+    fig.add_annotation(text="Outperforming",
                     xref="paper", yref="paper",
                     x=0.05, y=0.95, showarrow=False)
     fig.update_layout(shapes = [{'type': 'line','line': {'dash':'dot'}, 'yref': 'paper', 'xref': 'paper', 'y0': 0, 'y1': 1, 'x0': 0, 'x1': 1, 'layer': 'below'}])
